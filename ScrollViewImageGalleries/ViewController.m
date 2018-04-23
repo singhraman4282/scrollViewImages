@@ -50,17 +50,6 @@
     
 }//load
 
-//
-//- (NSArray <UIImage *> *)images {
-//
-//    return @[
-//             [UIImage imageNamed:@"Lighthouse-in-Field"],
-//             [UIImage imageNamed:@"Lighthouse-night"],
-//             [UIImage imageNamed:@"Lighthouse-zoomed"],
-//             ];
-//
-//}//images
-
 
 
 

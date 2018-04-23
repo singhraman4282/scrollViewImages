@@ -16,6 +16,7 @@
 		F12DB0A4208E64D60023A6A9 /* Lighthouse-in-Field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F12DB0A3208E64D60023A6A9 /* Lighthouse-in-Field.jpg */; };
 		F12DB0A6208E664B0023A6A9 /* Lighthouse-night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F12DB0A5208E664B0023A6A9 /* Lighthouse-night.jpg */; };
 		F12DB0A8208E69C90023A6A9 /* Lighthouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F12DB0A7208E69C90023A6A9 /* Lighthouse.jpg */; };
+		F12DB0AB208E70CB0023A6A9 /* PinchAndZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12DB0AA208E70CB0023A6A9 /* PinchAndZoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		F12DB0A3208E64D60023A6A9 /* Lighthouse-in-Field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-in-Field.jpg"; sourceTree = "<group>"; };
 		F12DB0A5208E664B0023A6A9 /* Lighthouse-night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-night.jpg"; sourceTree = "<group>"; };
 		F12DB0A7208E69C90023A6A9 /* Lighthouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lighthouse.jpg; sourceTree = "<group>"; };
+		F12DB0A9208E70CB0023A6A9 /* PinchAndZoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchAndZoomViewController.h; sourceTree = "<group>"; };
+		F12DB0AA208E70CB0023A6A9 /* PinchAndZoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchAndZoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				F12DB090208E49FD0023A6A9 /* ViewController.h */,
 				F12DB091208E49FD0023A6A9 /* ViewController.m */,
 				F12DB093208E49FD0023A6A9 /* Main.storyboard */,
+				F12DB0A9208E70CB0023A6A9 /* PinchAndZoomViewController.h */,
+				F12DB0AA208E70CB0023A6A9 /* PinchAndZoomViewController.m */,
 				F12DB096208E49FD0023A6A9 /* Assets.xcassets */,
 				F12DB098208E49FD0023A6A9 /* LaunchScreen.storyboard */,
 				F12DB09B208E49FD0023A6A9 /* Info.plist */,
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12DB0AB208E70CB0023A6A9 /* PinchAndZoomViewController.m in Sources */,
 				F12DB092208E49FD0023A6A9 /* ViewController.m in Sources */,
 				F12DB09D208E49FD0023A6A9 /* main.m in Sources */,
 				F12DB08F208E49FD0023A6A9 /* AppDelegate.m in Sources */,

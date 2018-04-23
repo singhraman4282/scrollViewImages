@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dKq-w6-Lwa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,5 +43,53 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Pinch And Zoom View Controller-->
+        <scene sceneID="M5I-y3-X4J">
+            <objects>
+                <viewController id="dKq-w6-Lwa" customClass="PinchAndZoomViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gjZ-xQ-52x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdP-1S-HWh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wfq-j8-Wtz">
+                                        <rect key="frame" x="0.0" y="0.0" width="900" height="1800"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.72596638869999996" blue="0.96521887309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Wfq-j8-Wtz" secondAttribute="bottom" id="Dbm-g2-hmk"/>
+                                    <constraint firstItem="Wfq-j8-Wtz" firstAttribute="top" secondItem="YdP-1S-HWh" secondAttribute="top" id="Lzm-tM-Kzf"/>
+                                    <constraint firstItem="Wfq-j8-Wtz" firstAttribute="leading" secondItem="YdP-1S-HWh" secondAttribute="leading" id="Xpx-vt-Y1U"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wfq-j8-Wtz" secondAttribute="trailing" id="pOa-LJ-3rP"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="dKq-w6-Lwa" id="ags-TF-DR5"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YdP-1S-HWh" firstAttribute="bottom" secondItem="SzP-1x-Jn3" secondAttribute="bottom" id="3oP-kn-2EM"/>
+                            <constraint firstItem="YdP-1S-HWh" firstAttribute="top" secondItem="gjZ-xQ-52x" secondAttribute="top" id="GHM-9r-F6F"/>
+                            <constraint firstItem="YdP-1S-HWh" firstAttribute="trailing" secondItem="SzP-1x-Jn3" secondAttribute="trailing" id="HeF-9R-0c9"/>
+                            <constraint firstItem="YdP-1S-HWh" firstAttribute="leading" secondItem="SzP-1x-Jn3" secondAttribute="leading" id="gjT-B7-d6D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SzP-1x-Jn3"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Wfq-j8-Wtz" id="2p2-Si-S03"/>
+                        <outlet property="scrollView" destination="YdP-1S-HWh" id="2cT-fJ-CbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLS-98-zBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168.8" y="154.27286356821591"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Lighthouse.jpg" width="900" height="1800"/>
+    </resources>
 </document>
