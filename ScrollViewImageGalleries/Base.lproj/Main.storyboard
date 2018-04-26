@@ -25,18 +25,29 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="jyT-sY-kK7"/>
                                 </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="KDa-J6-kIU">
+                                <rect key="frame" x="168" y="600" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.65782182870000006" green="0.90685385470000002" blue="0.1533108484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.90685385470000002" green="0.3857226372" blue="0.28136545419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="DK1-wI-qH9"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lgc-ml-9fC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OrU-I5-bKt"/>
                             <constraint firstItem="lgc-ml-9fC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="arv-rU-cKa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KDa-J6-kIU" secondAttribute="bottom" constant="30" id="fcO-PH-rMy"/>
                             <constraint firstItem="lgc-ml-9fC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fkF-7U-vOs"/>
+                            <constraint firstItem="KDa-J6-kIU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvV-qC-Vpf"/>
                             <constraint firstItem="lgc-ml-9fC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nLd-pc-XKq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="TE1-4Y-fD8"/>
                     <connections>
+                        <outlet property="pageControl" destination="KDa-J6-kIU" id="4M7-ZI-TbG"/>
                         <outlet property="scrollView" destination="lgc-ml-9fC" id="xKB-UT-URg"/>
                         <segue destination="E56-Ub-k0R" kind="show" identifier="1" id="L0u-1u-GBs"/>
                     </connections>

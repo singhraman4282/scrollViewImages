@@ -16,7 +16,8 @@
 @property (nonatomic) UIImage *image1;
 @property (nonatomic) UIImage *image2;
 @property (nonatomic) UIImage *image3;
-
+@property (nonatomic) int currentPage;
+@property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 
 
 
@@ -80,6 +81,9 @@
     [imageView2 addGestureRecognizer:tap2];
     [imageView3 addGestureRecognizer:tap3];
     
+    self.scrollView.pagingEnabled = true;
+    
+    
     
     
 }//load
@@ -133,8 +137,31 @@
     //    NSLog(@"tapped");
 }//imageTapped:
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    self.pageControl.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    
+    int currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    NSLog(@"%d", self.currentPage);
+}//scrollViewDidScroll
 
-
+- (IBAction)pageControlAction:(UIPageControl *)sender {
+    NSLog(@"%d", sender.currentPage);
+    
+    if (sender.currentPage == 0) {
+        self.scrollView.contentOffset = CGPointMake(0, 0);
+    }//0
+    
+    if (sender.currentPage == 1) {
+        self.scrollView.contentOffset = CGPointMake(self.view.frame.size.width, 0);
+    }//1
+    if (sender.currentPage == 2) {
+        self.scrollView.contentOffset = CGPointMake(self.view.frame.size.width * 2, 0);
+    }//2
+    
+    
+    
+}
 
 
 
